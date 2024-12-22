@@ -11,8 +11,8 @@
 **Step-by-Step Breakdown:**
 
 1. Set Up GitHub Repository:
-        - Your ETL script, written in Python (or other language), should be stored in a GitHub repository.
-        - The repository will contain a GitHub Actions workflow that automates the process of downloading the Kaggle dataset, preprocessing it, and uploading it to BigQuery.
+    - Your ETL script, written in Python (or other language), should be stored in a GitHub repository.
+    - The repository will contain a GitHub Actions workflow that automates the process of downloading the Kaggle dataset, preprocessing it, and uploading it to BigQuery.
 
 2. GitHub Actions Workflow:
 
