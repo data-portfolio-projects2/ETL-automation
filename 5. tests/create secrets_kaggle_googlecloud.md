@@ -62,3 +62,14 @@ You should now have three repository secrets:
 
 These secrets will be used in the GitHub Actions workflow to authenticate with Kaggle and Google Cloud.
 
+![image](https://github.com/user-attachments/assets/ac4d9849-e871-4211-b86e-c9c8e25dfceb)
+
+![image](https://github.com/user-attachments/assets/ceb59478-21ba-49a1-9f65-dc59b17c84ab)
+
+![image](https://github.com/user-attachments/assets/bc465afb-affc-4a23-a7d6-cb2a38acdff8)
+
+![image](https://github.com/user-attachments/assets/22cbe299-773e-407d-b496-1c7d76968ead)
+
+
+
+
