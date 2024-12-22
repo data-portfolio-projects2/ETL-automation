@@ -110,18 +110,18 @@ jobs:
 
 **Key Points to Consider:**
 
-- Kaggle API Key: Store your Kaggle API key securely in GitHub Secrets to authenticate and access datasets.
-- Preprocessing: Your ETL script will preprocess the data before uploading it to BigQuery. Ensure your data transformations are done efficiently using libraries like pandas.
-- BigQuery Client: Use the Google Cloud Python Client to load data into BigQuery directly from the GitHub Actions runner. You'll need to set up Google Cloud credentials (stored in GitHub Secrets) for authentication.
+- **Kaggle API Key:** Store your Kaggle API key securely in GitHub Secrets to authenticate and access datasets.
+- **Preprocessing:** Your ETL script will preprocess the data before uploading it to BigQuery. Ensure your data transformations are done efficiently using libraries like pandas.
+- **BigQuery Client:** Use the Google Cloud Python Client to load data into BigQuery directly from the GitHub Actions runner. You'll need to set up Google Cloud credentials (stored in GitHub Secrets) for authentication.
 
 **Advantages of This Approach:**
 
-1. Fully Automated: The entire process (download, preprocess, and load to BigQuery) can be automated using GitHub Actions, so it runs automatically without needing your local machine.
-2. Cloud-Based: Since everything runs on GitHub Actions, you won’t need to use your local machine, and all the resources can be cloud-based (Kaggle, BigQuery, etc.).
-3. Scalable: You can scale this approach to handle multiple datasets or workflows by adjusting your GitHub Actions workflow.
+1. **Fully Automated:** The entire process (download, preprocess, and load to BigQuery) can be automated using GitHub Actions, so it runs automatically without needing your local machine.
+2. **Cloud-Based:** Since everything runs on GitHub Actions, you won’t need to use your local machine, and all the resources can be cloud-based (Kaggle, BigQuery, etc.).
+3. **Scalable:** You can scale this approach to handle multiple datasets or workflows by adjusting your GitHub Actions workflow.
 
 **Limitations to Consider:**
-- Execution Time: GitHub Actions has a limit on job runtime (typically 6 hours per job for free-tier users), so if your dataset is very large or preprocessing is time-consuming, you may need to optimize or break the task into smaller jobs.
-- Storage: GitHub itself is not ideal for storing large datasets. As mentioned, you'll store the files either in Google Cloud Storage or upload them directly to BigQuery.
-- API Limitations: Be aware of any API rate limits for Kaggle and Google Cloud that may affect your workflow.
+- **Execution Time:** GitHub Actions has a limit on job runtime (typically 6 hours per job for free-tier users), so if your dataset is very large or preprocessing is time-consuming, you may need to optimize or break the task into smaller jobs.
+- **Storage:** GitHub itself is not ideal for storing large datasets. As mentioned, you'll store the files either in Google Cloud Storage or upload them directly to BigQuery.
+- **API Limitations:** Be aware of any API rate limits for Kaggle and Google Cloud that may affect your workflow.
 
