@@ -16,8 +16,8 @@ To authenticate with Kaggle, you need to add your Kaggle username and API key as
 
 4. Click on New repository secret to add the following secrets:
 
-  - KAGGLE_USERNAME: Enter your Kaggle username as the secret's value.
-  - KAGGLE_KEY: Enter your Kaggle API key as the secret's value.
+    - KAGGLE_USERNAME: Enter your Kaggle username as the secret's value.
+    - KAGGLE_KEY: Enter your Kaggle API key as the secret's value.
 
 5. Click Add secret after entering each value.
 
