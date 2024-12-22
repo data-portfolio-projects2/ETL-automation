@@ -6,6 +6,8 @@
 - Preprocess the data as needed (e.g., cleaning, transformations).
 3. BigQuery: After preprocessing the data, the script uploads the processed data directly into Google BigQuery using the BigQuery Python client or command-line tools.
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 **Step-by-Step Breakdown:**
 
 1. Set Up GitHub Repository:
@@ -104,6 +106,8 @@ jobs:
           python upload_to_bigquery.py
           # Python script that uploads the preprocessed data to BigQuery
 ```
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 **Key Points to Consider:**
 
 - Kaggle API Key: Store your Kaggle API key securely in GitHub Secrets to authenticate and access datasets.
