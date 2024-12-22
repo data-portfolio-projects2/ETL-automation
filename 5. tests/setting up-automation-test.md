@@ -21,8 +21,8 @@
 
 3. Download Dataset from Kaggle:
 
-- Kaggle API: Use the Kaggle API in your Python script to download datasets. You will need to authenticate with your Kaggle API key, which can be stored securely in GitHub Secrets.
-- Example of downloading from Kaggle using Python:
+    - Kaggle API: Use the Kaggle API in your Python script to download datasets. You will need to authenticate with your Kaggle API key, which can be stored securely in GitHub Secrets.
+    - Example of downloading from Kaggle using Python:
 
 ```python
 from kaggle.api.kaggle_api_extended import KaggleApi
@@ -34,13 +34,13 @@ api.dataset_download_files('dataset-owner/dataset-name', path='/tmp', unzip=True
 
 4. Preprocess the Data:
 
-- After downloading the dataset, your Python script will preprocess the data (e.g., remove null values, change formats, filter rows, etc.) using libraries like pandas or numpy.
+    - After downloading the dataset, your Python script will preprocess the data (e.g., remove null values, change formats, filter rows, etc.) using libraries like pandas or numpy.
 
 5. Upload Data to BigQuery:
 
-- Once the data is preprocessed, the script will upload the data to Google BigQuery. You can use the BigQuery Python client to upload the file directly to BigQuery.
+    - Once the data is preprocessed, the script will upload the data to Google BigQuery. You can use the BigQuery Python client to upload the file directly to BigQuery.
 
-- Example of uploading data to BigQuery:
+    - Example of uploading data to BigQuery:
 
 ```python
 from google.cloud import bigquery
