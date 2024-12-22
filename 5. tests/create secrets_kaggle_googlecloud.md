@@ -23,11 +23,12 @@ To authenticate with Kaggle, you need to add your Kaggle username and API key as
 
 6. Click Add secret after entering each value.
 
-**Secrets Added:**
-
-       KAGGLE_USERNAME: Your Kaggle username.
-       KAGGLE_KEY: Your Kaggle API key.
-
+   **Secrets Added:**
+   ```
+   KAGGLE_USERNAME: Your Kaggle username.
+   KAGGLE_KEY: Your Kaggle API key.
+   ```
+   
 #### **2. Add Google Cloud Credentials**
 
 To authenticate with Google Cloud, you will use a service account JSON key. You will add the contents of your Google Cloud service account JSON key file as a secret in GitHub.
