@@ -15,16 +15,18 @@ To authenticate with Kaggle, you need to add your Kaggle username and API key as
 3. In the left sidebar, click `Secrets and variables`, then select Actions.
 
 4. Click on New repository secret to add the following secrets:
+   
+    ```
+    KAGGLE_USERNAME: Enter your Kaggle username as the secret's value.
+    KAGGLE_KEY: Enter your Kaggle API key as the secret's value.
+    ```
 
-    - KAGGLE_USERNAME: Enter your Kaggle username as the secret's value.
-    - KAGGLE_KEY: Enter your Kaggle API key as the secret's value.
-
-5. Click Add secret after entering each value.
+6. Click Add secret after entering each value.
 
 **Secrets Added:**
 
-    - KAGGLE_USERNAME: Your Kaggle username.
-    - KAGGLE_KEY: Your Kaggle API key.
+    KAGGLE_USERNAME: Your Kaggle username.
+    KAGGLE_KEY: Your Kaggle API key.
 
 #### **2. Add Google Cloud Credentials**
 
@@ -35,15 +37,17 @@ To authenticate with Google Cloud, you will use a service account JSON key. You 
 1. In the Secrets and variables section of your GitHub repository settings, click New repository secret.
 
 2. Enter the following information:
-
-  - Name: Enter GOOGLE_CLOUD_KEY as the secret name.
-  - Secret: Paste the entire contents of your Google Cloud service account JSON key file as the secret's value.
-
-3. Click Add secret.
+   
+    ```
+    Name: Enter GOOGLE_CLOUD_KEY as the secret name.
+    Secret: Paste the entire contents of your Google Cloud service account JSON key file as the secret's value.
+    ```
+    
+4. Click Add secret.
 
 **Secret Added:**
 
-  - GOOGLE_CLOUD_KEY: The content of your Google Cloud service account JSON key file.
+    GOOGLE_CLOUD_KEY: The content of your Google Cloud service account JSON key file.
 
 **Summary of Secrets Created**
 
