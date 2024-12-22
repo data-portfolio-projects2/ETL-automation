@@ -46,10 +46,12 @@ To authenticate with Google Cloud, you will use a service account JSON key. You 
     
 4. Click Add secret.
 
-**Secret Added:**
+   **Secret Added:**
 
-    GOOGLE_CLOUD_KEY: The content of your Google Cloud service account JSON key file.
-
+   ``` 
+   GOOGLE_CLOUD_KEY: The content of your Google Cloud service account JSON key file.
+   ```
+   
 **Summary of Secrets Created**
 
 You should now have three repository secrets:
