@@ -2,8 +2,8 @@
 
 1. Kaggle: The Kaggle dataset is accessed using the Kaggle API. The dataset file is downloaded to the GitHub Actions environment (not to GitHub directly).
 2. GitHub (Python ETL Script): The ETL script in your GitHub repository contains functions to:
-- Download the dataset from Kaggle.
-- Preprocess the data as needed (e.g., cleaning, transformations).
+  - Download the dataset from Kaggle.
+  - Preprocess the data as needed (e.g., cleaning, transformations).
 3. BigQuery: After preprocessing the data, the script uploads the processed data directly into Google BigQuery using the BigQuery Python client or command-line tools.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
