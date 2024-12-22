@@ -27,6 +27,7 @@ Automate the extraction, transformation, and loading (ETL) process for a dataset
   - BIGQUERY_CREDENTIALS: Your Google Cloud service account JSON credentials (encoded as a single line).
 
 **GitHub Actions Workflow**
+
 Create a GitHub Actions workflow file in your repository at .github/workflows/etl.yml:
 
 ```yaml
@@ -66,6 +67,7 @@ jobs:
 ```
 
 **Python ETL Script**
+
 Create the ETL script etl_script.py in your repository:
 
 ```python
@@ -117,6 +119,7 @@ print("Data loaded to BigQuery successfully.")
 ```
 
 **Dependencies**
+
 Create a requirements.txt file in your repository to list the required Python packages:
 
 ```python
