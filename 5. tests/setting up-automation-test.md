@@ -1,25 +1,25 @@
 ### **Process Flow:**
 
-1. Kaggle: The Kaggle dataset is accessed using the Kaggle API. The dataset file is downloaded to the GitHub Actions environment (not to GitHub directly).
-2. GitHub (Python ETL Script): The ETL script in your GitHub repository contains functions to:
+1. **Kaggle:** The Kaggle dataset is accessed using the Kaggle API. The dataset file is downloaded to the GitHub Actions environment (not to GitHub directly).
+2. **GitHub (Python ETL Script):** The ETL script in your GitHub repository contains functions to:
     - Download the dataset from Kaggle.
     - Preprocess the data as needed (e.g., cleaning, transformations).
-3. BigQuery: After preprocessing the data, the script uploads the processed data directly into Google BigQuery using the BigQuery Python client or command-line tools.
+3. **BigQuery:** After preprocessing the data, the script uploads the processed data directly into Google BigQuery using the BigQuery Python client or command-line tools.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 **Step-by-Step Breakdown:**
 
-1. Set Up GitHub Repository:
+1. **Set Up GitHub Repository:**
     - Your ETL script, written in Python (or other language), should be stored in a GitHub repository.
     - The repository will contain a GitHub Actions workflow that automates the process of downloading the Kaggle dataset, preprocessing it, and uploading it to BigQuery.
 
-2. GitHub Actions Workflow:
+2. **GitHub Actions Workflow:**
 
     - The GitHub Actions workflow is set up to run on a schedule or when triggered (e.g., a push to the main branch).
     - The workflow will include steps for installing dependencies (like kaggle API, google-cloud-bigquery), running the Python script, and uploading the processed data to BigQuery.
 
-3. Download Dataset from Kaggle:
+3. **Download Dataset from Kaggle:**
 
     - Kaggle API: Use the Kaggle API in your Python script to download datasets. You will need to authenticate with your Kaggle API key, which can be stored securely in GitHub Secrets.
     - Example of downloading from Kaggle using Python:
@@ -32,11 +32,11 @@ api.authenticate()
 api.dataset_download_files('dataset-owner/dataset-name', path='/tmp', unzip=True)
 ```
 
-4. Preprocess the Data:
+4. **Preprocess the Data:**
 
     - After downloading the dataset, your Python script will preprocess the data (e.g., remove null values, change formats, filter rows, etc.) using libraries like pandas or numpy.
 
-5. Upload Data to BigQuery:
+5. **Upload Data to BigQuery:**
 
     - Once the data is preprocessed, the script will upload the data to Google BigQuery. You can use the BigQuery Python client to upload the file directly to BigQuery.
 
@@ -58,7 +58,7 @@ table_id = f"{dataset_id}.your_table"
 job = client.load_table_from_dataframe(df, table_id)
 job.result()  # Wait for the load to complete
 ```
-6. GitHub Actions Workflow Example (etl.yml): Here's an example GitHub Actions YAML file (.github/workflows/etl.yml) that automates the process:
+6. **GitHub Actions Workflow Example (etl.yml):** Here's an example GitHub Actions YAML file (.github/workflows/etl.yml) that automates the process:
 
 ```python
 name: ETL Automation for Kaggle to BigQuery
