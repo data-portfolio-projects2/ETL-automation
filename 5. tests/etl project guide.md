@@ -19,8 +19,8 @@ Automate the extraction, transformation, and loading (ETL) process for a dataset
 
 1. Kaggle API Credentials:
 
-  - KAGGLE_USERNAME: Your Kaggle username.
-  - KAGGLE_KEY: Your Kaggle API key.
+    - KAGGLE_USERNAME: Your Kaggle username.
+    - KAGGLE_KEY: Your Kaggle API key.
 
 2. Google Cloud Credentials:
 
