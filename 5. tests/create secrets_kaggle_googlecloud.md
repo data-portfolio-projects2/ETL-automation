@@ -23,8 +23,8 @@ To authenticate with Kaggle, you need to add your Kaggle username and API key as
 
 **Secrets Added:**
 
-  - KAGGLE_USERNAME: Your Kaggle username.
-  - KAGGLE_KEY: Your Kaggle API key.
+    - KAGGLE_USERNAME: Your Kaggle username.
+    - KAGGLE_KEY: Your Kaggle API key.
 
 #### **2. Add Google Cloud Credentials**
 
