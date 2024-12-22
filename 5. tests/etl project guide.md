@@ -24,7 +24,7 @@ Automate the extraction, transformation, and loading (ETL) process for a dataset
 
 2. Google Cloud Credentials:
 
-  - BIGQUERY_CREDENTIALS: Your Google Cloud service account JSON credentials (encoded as a single line).
+    - BIGQUERY_CREDENTIALS: Your Google Cloud service account JSON credentials (encoded as a single line).
 
 **GitHub Actions Workflow**
 
@@ -136,10 +136,10 @@ google-auth-httplib2
 2. The GitHub Actions workflow will trigger automatically based on the specified schedule or on a push to the main branch.
 3. The workflow will:
    
-  - Check out the repository.
-  - Set up the Python environment.
-  - Install dependencies.
-  - Run the ETL script to download, preprocess, and upload data to BigQuery.
+      - Check out the repository.
+      - Set up the Python environment.
+      - Install dependencies.
+      - Run the ETL script to download, preprocess, and upload data to BigQuery.
 
 **Conclusion**
 This setup allows for automated ETL processes using GitHub Actions. The data is fetched directly from Kaggle, processed within the script, and uploaded to BigQuery without needing to store intermediate files on GitHub.
